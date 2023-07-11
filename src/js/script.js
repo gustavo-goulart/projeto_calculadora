@@ -15,6 +15,7 @@ function calcular() {
     // verifica se a expressão contém uma divisão por zero
     if (valorDisplay.includes("/0")) {
       alert("Não é possível fazer divisão por zero!");
+      clean();
     } else {
       // realiza a operação
       document.querySelector(".display").value = eval(valorDisplay); //calcula
